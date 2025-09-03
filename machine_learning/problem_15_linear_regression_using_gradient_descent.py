@@ -44,9 +44,17 @@ def linear_regression_gradient_descent(
 def linear_regression_gradient_descent(X, y, alpha, iterations) -> torch.Tensor:
     """
     Solve linear regression via gradient descent using PyTorch autograd.
-    X: Tensor or convertible of shape (m, n); y: shape (m,) or (m, 1).
-    alpha: learning rate; iterations: number of steps.
-    Returns a 1-D tensor of length n, rounded to 4 decimals.
+    X: 
+        Tensor or convertible of shape (m, n); 
+    y: 
+        shape (m,) or (m, 1).
+    alpha: 
+        learning rate; 
+    iterations: 
+        number of steps.
+    Returns 
+    -------
+    a 1-D tensor of length n, rounded to 4 decimals.
     """
     # Ensure tensors and shapes
     X_t = torch.as_tensor(X, dtype=torch.float32)
